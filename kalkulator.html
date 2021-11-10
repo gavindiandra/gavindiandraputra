@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Clean Blog - Start Bootstrap Theme</title>
+    <title>Clean Blog - Gavin Diandra</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
@@ -30,85 +30,84 @@
             <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a></li>
             <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">Sample Post</a></li>
             <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Contact</a></li>
-            <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="Calculator.html">Calculator</a></li>
+            <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="kalkulator.html">Calculator</a></li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- Page Header-->
-    <header class="masthead" style="background-image: url('assets/img/contact-bg.jpg')">
+    <header class="masthead" style="background-image: url('assets/img/1.jpg')">
       <div class="container position-relative px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
           <div class="col-md-10 col-lg-8 col-xl-7">
-            <div class="page-heading">
-              <h1>Gavin Diandra</h1>
-              <span class="subheading">Contact Me</span>
+            <div class="site-heading">
+              <h1 style="text-decoration-color: antiquewhite">Gavin Diandra</h1>
+              <span class="subheading">Web Developer & Student</span>
             </div>
           </div>
         </div>
       </div>
     </header>
     <!-- Main Content-->
-    <main class="mb-4">
-      <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-          <div class="col-md-10 col-lg-8 col-xl-7">
-            <div class="my-5">
-              <!-- * * * * * * * * * * * * * * *-->
-              <!-- * * SB Forms Contact Form * *-->
-              <!-- * * * * * * * * * * * * * * *-->
-              <!-- This form is pre-integrated with SB Forms.-->
-              <!-- To make this form functional, sign up at-->
-              <!-- https://startbootstrap.com/solution/contact-forms-->
-              <!-- to get an API token!-->
-              <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                <div class="form-floating">
-                  <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                  <label for="name">Name</label>
-                  <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                </div>
-                <div class="form-floating">
-                  <input class="form-control" id="email" type="email" placeholder="Enter your email..." data-sb-validations="required,email" />
-                  <label for="email">Email address</label>
-                  <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                  <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                </div>
-                <div class="form-floating">
-                  <input class="form-control" id="phone" type="tel" placeholder="Enter your phone number..." data-sb-validations="required" />
-                  <label for="phone">Phone Number</label>
-                  <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                </div>
-                <div class="form-floating">
-                  <textarea class="form-control" id="message" placeholder="Enter your message here..." style="height: 12rem" data-sb-validations="required"></textarea>
-                  <label for="message">Message</label>
-                  <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                </div>
-                <br />
-                <!-- Submit success message-->
-                <!---->
-                <!-- This is what your users will see when the form-->
-                <!-- has successfully submitted-->
-                <div class="d-none" id="submitSuccessMessage">
-                  <div class="text-center mb-3">
-                    <div class="fw-bolder">Form submission successful!</div>
-                    To activate this form, sign up at
-                    <br />
-                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                  </div>
-                </div>
-                <!-- Submit error message-->
-                <!---->
-                <!-- This is what your users will see when there is-->
-                <!-- an error submitting the form-->
-                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                <!-- Submit Button-->
-                <button class="btn btn-primary text-uppercase disabled" id="submitButton" type="submit">Send</button>
-              </form>
-            </div>
+    <head>
+      <link rel="stylesheet" type="text/css" href="css/kalkulator.css" />
+      <link href="css/kalkulator.css" rel="stylesheet" />
+      <title>Aplikasi Kalkulator Simple</title>
+    </head>
+    <div id="container">
+      <div id="calculator">
+        <div id="result">
+          <div id="history">
+            <p id="history-value"></p>
+          </div>
+          <div id="output">
+            <p id="output-values"></p>
           </div>
         </div>
+        <div id="keyboard">
+          <button class="operator" id="clear">C</button>
+          <button class="operator" id="backspace">CE</button>
+          <button class="operator" id="%">%</button>
+          <button class="operator" id="/">&#247;</button>
+          <button class="number" id="7">7</button>
+          <button class="number" id="8">8</button>
+          <button class="number" id="9">9</button>
+          <button class="operator" id="*">&times;</button>
+          <button class="number" id="4">4</button>
+          <button class="number" id="5">5</button>
+          <button class="number" id="6">6</button>
+          <button class="operator" id="-">-</button>
+          <button class="number" id="1">1</button>
+          <button class="number" id="2">2</button>
+          <button class="number" id="3">3</button>
+          <button class="operator" id="+">+</button>
+          <button class="empty" id="empty"></button>
+          <button class="number" id="0">0</button>
+          <button class="empty" id="empty"></button>
+          <button class="operator" id="=">=</button>
+        </div>
       </div>
-    </main>
+    </div>
+    <script src="js/kalkulator.js"></script>
+
+    <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <title>to do List</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" type="text/css" media="screen" href="todo.css" />
+      <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
+    </head>
+    <body>
+      <h1><span class="title">to do </span>List</h1>
+      <div class="inputDiv">
+        <input type="text" class="input" placeholder="Apa yang ingin kamu lakukan...?" />
+        <button class="add"><i class="fas fa-plus"></i></button>
+      </div>
+      <div class="isi"></div>
+      <script src="todo.js"></script>
+    </body>
     <!-- Footer-->
     <footer class="border-top">
       <div class="container px-4 px-lg-5">
@@ -157,10 +156,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
   </body>
 </html>
